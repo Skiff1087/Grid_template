@@ -152,9 +152,13 @@ a {
 }
 .skills__container {
   display: grid;
-  background-color: red;
+  gap: 10px;
+  grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
+  grid-template-columns: repeat(4, 1rf);
+  grid-auto-rows: calc(33.333vh - 13.333px);
 }
 .skills-item {
+  background-color: red;
 }
 .skills-item__title {
 }
@@ -163,4 +167,40 @@ a {
 .skills-item__image {
 }
 .skills-item__overlay {
+}
+
+.skills-item:nth-of-type(1) {
+  grid-area: a1;
+}
+
+.skills-item:nth-of-type(2) {
+  grid-area: a2;
+}
+
+.skills-item:nth-of-type(3) {
+  grid-area: a3;
+}
+
+.skills-item:nth-of-type(4) {
+  grid-area: a4;
+}
+
+.skills-item:nth-of-type(5) {
+  grid-area: a5;
+}
+
+.skills-item:nth-of-type(6) {
+  grid-area: a6;
+}
+
+.skills-item:nth-of-type(7) {
+  grid-area: a7;
+}
+
+.skills-item:nth-of-type(8) {
+  grid-area: a8;
+}
+
+.skills-item:nth-of-type(9) {
+  grid-area: a9;
 }
