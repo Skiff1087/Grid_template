@@ -204,3 +204,8 @@ a {
 .skills-item:nth-of-type(9) {
   grid-area: a9;
 }
+
+@media (min-height 691px) {
+}
+@media (max-height 690px) {
+}
