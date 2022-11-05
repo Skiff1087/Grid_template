@@ -143,3 +143,24 @@ a {
   padding: 20px;
   font-size: 1.125rem;
 }
+
+.main {
+  display: block;
+}
+.skills {
+  padding: 10px;
+}
+.skills__container {
+  display: grid;
+  background-color: red;
+}
+.skills-item {
+}
+.skills-item__title {
+}
+.skills-item__link {
+}
+.skills-item__image {
+}
+.skills-item__overlay {
+}
