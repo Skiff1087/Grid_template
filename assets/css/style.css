@@ -16,13 +16,12 @@ body {
 }
 
 h1 {
-  font-size: 3.75rem;
   letter-spacing: 0.08em;
   color: #ffffff;
   font-weight: 300;
   font-family: "Roboto Slab", serif;
-  text-align: center;
   line-height: 1.2em;
+  text-align: center;
 }
 
 a {
@@ -257,7 +256,7 @@ a {
   }
 }
 
-@media (min-width 992px) {
+@media (min-width: 992px) {
   h1 {
     font-size: 3.75rem;
   }
