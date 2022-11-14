@@ -1,0 +1,14 @@
+.header-menu {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  height: $gap-x5;
+}
+
+.header-menu__conteiner {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: $gap;
+}

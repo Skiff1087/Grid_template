@@ -1,0 +1,22 @@
+.header-content {
+  position: relative;
+  z-index: 1;
+}
+
+.header-content__title {
+  margin: 0, 0, 53px;
+}
+
+.header-content__btn {
+  display: flex;
+  justify-content: center;
+  gap: $gap;
+}
+
+.header-content__conteiner,
+.header-menu__conteiner {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: $ul;
+  margin: 0 auto;
+}
