@@ -8,19 +8,21 @@
   font-size: 18px;
   letter-spacing: 0.1em;
   transition: 0.5s;
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+  }
+
+  &--primary {
+    width: 250px;
+    background-color: rgba($color-light, 0.1);
+    border: 2px solid $color-light;
+  }
+  &--light {
+    width: 350px;
+    border: 2px solid $color-primary;
+    background-color: rgba($color-primary, 0.8);
+  }
 }
 
-.btn--primary {
-  width: 250px;
-  background-color: rgba($color-light, 0.1);
-  border: 2px solid $color-light;
-}
-.btn--light {
-  width: 350px;
-  border: 2px solid $color-primary;
-  background-color: rgba($color-primary, 0.8);
-}
-.btn:hover,
-.btn:focus {
-  background-color: $color-accent;
-}

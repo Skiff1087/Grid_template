@@ -4,11 +4,12 @@
   top: 0;
   width: 100%;
   height: $gap-x5;
+
+  &__conteiner {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: $gap;
+  }
 }
 
-.header-menu__conteiner {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  gap: $gap;
-}
