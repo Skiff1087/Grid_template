@@ -1,10 +1,13 @@
+@use "../../../presets/" as *;
+@use "../../../mixins/" as *;
+
 .skills-item {
   position: relative;
   overflow: hidden;
 
   &:hover {
     .skills-item__link {
-      color: $color-accent;
+      color: #d66926;
     }
     .skills-item__image {
       transform: scale(1.1);
@@ -25,37 +28,31 @@
   &__link {
     display: flex;
     height: 100%;
-    padding: $gap;
+    padding: 20px;
     align-items: center;
     justify-content: center;
     transition: color 0.5s;
   }
-    &__image {
-      background-color: $color-primary;
-      position: absolute;
-      inset: 0;
-      background-size: cover;
-      background-position: 50% 50%;
-      transition: 0.5s transform;
-    }
-
-    &__overlay {
-      position: absolute;
-      inset: 0;
-      background-color: $color-primary;
-      opacity: 0.8;
-      transition: opacity 0.5s;
-          }
+  &__image {
+    background-color: #2d3651;
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: 0.5s transform;
   }
 
-  @for $i from 1 through 3 {
-    .skills-item:nth-of-type(#{$i}){
-      background-color: lighten($base-color, $i * 5%);
-    }
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background-color: #2d3651;
+    opacity: 0.8;
+    transition: opacity 0.5s;
   }
-  
+}
 
-
-.skills-item:nth-of-type(1) {
-  grid-area: a1;
+@for $i from 1 through 9 {
+  .skills-item:nth-of-type(#{$i}) {
+    grid-area: a#{$i};
+  }
 }
