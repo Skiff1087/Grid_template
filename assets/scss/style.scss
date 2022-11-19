@@ -24,13 +24,13 @@
 
 @use "components/footer/footer";
 
-@media (min-width $md) {
+@media (min-width 768px) {
   h1 {
     font-size: 2.5rem;
   }
 }
 
-@media (min-width: $lg) {
+@media (min-width: 992px) {
   h1 {
     font-size: 3.75rem;
   }

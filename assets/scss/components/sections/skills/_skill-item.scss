@@ -7,7 +7,7 @@
 
   &:hover {
     .skills-item__link {
-      color: #d66926;
+      color: $color-accent;
     }
     .skills-item__image {
       transform: scale(1.1);
@@ -28,13 +28,13 @@
   &__link {
     display: flex;
     height: 100%;
-    padding: 20px;
+    padding: $gap;
     align-items: center;
     justify-content: center;
     transition: color 0.5s;
   }
   &__image {
-    background-color: #2d3651;
+    background-color: $color-primary;
     position: absolute;
     inset: 0;
     background-size: cover;
@@ -45,7 +45,7 @@
   &__overlay {
     position: absolute;
     inset: 0;
-    background-color: #2d3651;
+    background-color: $color-primary;
     opacity: 0.8;
     transition: opacity 0.5s;
   }

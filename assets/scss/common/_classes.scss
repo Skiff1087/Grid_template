@@ -14,17 +14,17 @@
 
   &:hover,
   &:focus {
-    background-color: #d66926;
+    background-color: $color-accent;
   }
 
   &--primary {
     width: 250px;
-    background-color: rgba(white, 0.1);
-    border: 2px solid white;
+    background-color: rgba($color-light, 0.1);
+    border: 2px solid $color-light;
   }
   &--light {
     width: 350px;
-    border: 2px solid #2d3651;
-    background-color: rgba(#2d3651, 0.8);
+    border: 2px solid $color-primary;
+    background-color: rgba($color-primary, 0.8);
   }
 }

@@ -2,7 +2,7 @@
 @use "../../mixins/" as *;
 
 .header {
-  background-color: #2d3651;
+  background-color: $color-primary;
   background-image: url(../img/img-header.png);
   background-position: 50%, 50%;
   padding: 150px 0;
