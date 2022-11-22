@@ -23,32 +23,3 @@
 @use "components/sections/section-posts";
 
 @use "components/footer/footer";
-
-@media (min-width 768px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-}
-
-@media (min-width: 992px) {
-  h1 {
-    font-size: 3.75rem;
-  }
-}
-
-@media (max-width 767px) {
-  h1 {
-    font-size: 1.875rem;
-  }
-}
-
-@media (min-height 691px) {
-  .skills__container {
-    grid-auto-rows: calc(33.333vh - 13.333px);
-  }
-}
-@media (max-height 690px) {
-  .skills__container {
-    grid-auto-rows: calc(230px - 13.333px);
-  }
-}

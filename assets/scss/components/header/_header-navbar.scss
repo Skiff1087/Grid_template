@@ -19,5 +19,10 @@
     display: block;
     padding: $gap;
     font-size: 1.125rem;
+    transition: color 0.25s;
+
+    &:hover {
+      color: $color-accent;
+    }
   }
 }

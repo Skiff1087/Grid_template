@@ -82,6 +82,15 @@ function watchFiles() {
   watch(PATH.jsFiles, sync);
 }
 
+function watchInDevMode() {
+  syncInit();
+  if (!option) watch(PATH.scssFiles, series(scssDev));
+  if (option === '--dev') watch(PATH.scssFiles, series(scssDev));
+  if (option === '--css') watch(PATH.cssFiles, sync);
+  watch(PATH.htmlFiles, sync);
+  watch(PATH.jsFiles, sync);
+}
+
 function createStructure() {
   let file = [];
   let scssFiles = [];
@@ -119,6 +128,6 @@ function createStructure() {
 
 task('comb', series(comb));
 task('scss', series(scss));
-task('dev', series(scssDev));
 task('cs', series(createStructure));
 task('watch', watchFiles);
+task('dev', watchInDevMode);
