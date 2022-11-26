@@ -1,0 +1,14 @@
+@use "../../presets/" as *;
+@use "../../mixins/" as *;
+
+.about {
+  &__container {
+    @extend %conteiner;
+  }
+
+  &__content {
+  }
+
+  &__image {
+  }
+}

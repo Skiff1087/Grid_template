@@ -26,17 +26,27 @@ h1 {
   line-height: 1.2em;
   text-align: center;
 
-  @media (min-width: 992px) {
+  @include lg-min {
     font-size: 3.75rem;
   }
 
-  @media (max-width: 991px) and (min-width: 768px) {
+  @include lg-md {
     font-size: 2.5rem;
   }
 
-  @media (max-width: 767px) {
+  @include md {
     font-size: 1.875rem;
   }
+}
+
+h2 {
+  font-family: $font-header;
+  color: $color-primary;
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+
+  font-size: $gap-x2;
+  margin-bottom: 3rem;
 }
 
 a {
