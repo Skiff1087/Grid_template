@@ -18,8 +18,8 @@
   }
 
   &__title {
-    position: absolute;
-    inset: 0;
+    @include abs-position;
+
     z-index: 1;
     margin: 0;
 
@@ -40,17 +40,17 @@
     transition: color 0.5s;
   }
   &__image {
+    @include abs-position;
+
     background-color: $color-primary;
-    position: absolute;
-    inset: 0;
     background-size: cover;
     background-position: 50% 50%;
     transition: 0.5s transform;
   }
 
   &__overlay {
-    position: absolute;
-    inset: 0;
+    @include abs-position;
+
     background-color: $color-primary;
     opacity: 0.8;
     transition: opacity 0.5s;

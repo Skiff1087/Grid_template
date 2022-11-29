@@ -2,7 +2,12 @@
 @use "../../mixins/" as *;
 
 .about {
+  background-color: $color-gray-light;
+
   &__container {
+    display: grid;
+    gap: 100px;
+    grid-template-columns: 1fr 271px;
     @extend %conteiner;
   }
 
@@ -10,5 +15,6 @@
   }
 
   &__image {
+    margin-bottom: 3rem;
   }
 }
