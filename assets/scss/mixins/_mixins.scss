@@ -4,8 +4,9 @@
   display: block;
   overflow: hidden;
 
-  $color-light-space: nowrap;
   text-overflow: ellipsis;
+
+  $color-light-space: nowrap;
 }
 
 @mixin bg-color($a: 0, $rgb: 0) {

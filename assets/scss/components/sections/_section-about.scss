@@ -6,13 +6,13 @@
 
   &__container {
     display: grid;
+
+    @extend %conteiner;
     gap: 100px;
     grid-template-columns: 1fr 271px;
-    @extend %conteiner;
   }
 
-  &__content {
-  }
+
 
   &__image {
     margin-bottom: 3rem;

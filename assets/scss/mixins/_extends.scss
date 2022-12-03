@@ -3,8 +3,8 @@
 @use "mixins-media" as *;
 
 %conteiner {
-  padding-left: 0;
-  padding-right: 0;
   max-width: $ul;
   margin: 0 auto;
+  padding-right: 0;
+  padding-left: 0;
 }

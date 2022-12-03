@@ -3,5 +3,6 @@
 
 .header-overlay {
   background-color: rgba($color-primary, 0.8);
+
   @include abs-position;
 }

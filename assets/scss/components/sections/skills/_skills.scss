@@ -5,33 +5,29 @@
   @include sm-min {
     padding: $gap-sm;
   }
-
   @include sm {
     padding: $gap;
   }
 
   &__container {
     display: grid;
-    grid-auto-rows: calc(33.333vh - 13.333px);
 
+    grid-auto-rows: calc(33.333vh - 13.333px);
     @include lg-min {
       gap: $gap-sm;
       grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
       grid-template-columns: repeat(4, 1rf);
     }
-
     @include lg-md {
       gap: $gap-sm;
       grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6" "a7 a8 a6" "a7 a8 a9";
       grid-template-columns: repeat(3, 1rf);
     }
-
     @include md-sm {
       gap: $gap-sm;
       grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
       grid-template-columns: repeat(2, 1rf);
     }
-
     @include sm {
       gap: $gap;
       grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
@@ -48,6 +44,7 @@
   &__action {
     display: flex;
     justify-content: center;
+
     margin-top: $gap;
 
     @include sm-min {

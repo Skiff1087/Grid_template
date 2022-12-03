@@ -3,6 +3,7 @@
 
 .skills-item {
   position: relative;
+
   overflow: hidden;
 
   &:hover {
@@ -18,11 +19,11 @@
   }
 
   &__title {
-    @include abs-position;
-
     z-index: 1;
+
     margin: 0;
 
+    @include abs-position;
     @include md-min {
       font-size: 1.25rem;
     }
@@ -33,27 +34,31 @@
 
   &__link {
     display: flex;
-    height: 100%;
-    padding: $gap;
     align-items: center;
     justify-content: center;
+
+    height: 100%;
+    padding: $gap;
+
     transition: color 0.5s;
   }
   &__image {
-    @include abs-position;
+    transition: 0.5s transform;
 
     background-color: $color-primary;
-    background-size: cover;
     background-position: 50% 50%;
-    transition: 0.5s transform;
+    background-size: cover;
+
+    @include abs-position;
   }
 
   &__overlay {
-    @include abs-position;
-
-    background-color: $color-primary;
-    opacity: 0.8;
     transition: opacity 0.5s;
+
+    opacity: 0.8;
+    background-color: $color-primary;
+
+    @include abs-position;
   }
 }
 
