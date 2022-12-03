@@ -3,18 +3,21 @@
 
 .about {
   background-color: $color-gray-light;
-
+  padding-top: $gap-x5;
+  padding-bottom: $gap-x5;
   &__container {
     display: grid;
-
-    @extend %conteiner;
     gap: 100px;
     grid-template-columns: 1fr 271px;
+
+    @extend %conteiner;
   }
 
-
-
+  &__content {
+  }
   &__image {
-    margin-bottom: 3rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
   }
 }

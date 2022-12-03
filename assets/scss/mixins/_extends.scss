@@ -5,6 +5,6 @@
 %conteiner {
   max-width: $ul;
   margin: 0 auto;
-  padding-right: 0;
-  padding-left: 0;
+  padding-right: $gap;
+  padding-left: $gap;
 }

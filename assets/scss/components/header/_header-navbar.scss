@@ -5,79 +5,66 @@
   @include md {
     display: flex;
     justify-content: flex-end;
-
     margin-right: $gap;
   }
 
   &__btn {
-    position: relative;
-
     width: 30px;
     height: 22.5px;
+    position: relative;
     margin: $gap 0;
-
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
     transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
 
     @include md-min {
       display: none;
     }
 
     &-row {
-      position: absolute;
-      left: 0;
-
       display: block;
-
-      width: 100%;
+      position: absolute;
       height: 3px;
-
-      transition: 0.25s ease-in-out;
-      transform: rotate(0deg);
-
-      opacity: 1;
-      border-radius: 3px;
+      width: 100%;
       background: $color-light;
+      border-radius: 3px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: 0.25s ease-in-out;
 
       &:nth-child(1) {
-        top: 0;
-
+        top: 0px;
         transform-origin: left center;
       }
 
       &:nth-child(2) {
         top: 9px;
-
         transform-origin: left center;
       }
 
       &:nth-child(3) {
         top: 18px;
-
         transform-origin: left center;
       }
     }
 
     &--active span {
       &:nth-child(1) {
+        transform: rotate(45deg);
         top: -3px;
         left: 4px;
-
-        transform: rotate(45deg);
       }
 
       &:nth-child(2) {
-        width: 0;
-
+        width: 0%;
         opacity: 0;
       }
 
       &:nth-child(3) {
+        transform: rotate(-45deg);
         top: 18.5px;
         left: 4px;
-
-        transform: rotate(-45deg);
       }
     }
   }
@@ -85,25 +72,20 @@
   &__list {
     @include md-min {
       display: grid;
-      justify-content: end;
-
-      gap: $gap;
       grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+      justify-content: end;
+      gap: $gap;
       @include unlist(0 -10px 0);
     }
     @include md {
+      text-align: right;
+      display: none;
+      @include unlist;
+      @include box-shadow;
+      background-color: rgba($color-gray-dark, 0.5);
       position: absolute;
       top: 100%;
       right: $gap;
-
-      display: none;
-
-      text-align: right;
-
-      background-color: rgba($color-gray-dark, 0.5);
-
-      @include unlist;
-      @include box-shadow;
     }
   }
 
@@ -115,14 +97,13 @@
 
   &__link {
     display: block;
-
-    transition: color 0.25s;
-
     font-size: 1.125rem;
+    transition: color 0.25s;
 
     @include md-min {
       padding: $gap $gap-sm;
     }
+
     @include md {
       padding: $gap-sm $gap;
     }

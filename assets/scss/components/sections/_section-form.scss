@@ -1,0 +1,20 @@
+@use "../../presets/" as *;
+@use "../../mixins/" as *;
+
+.form {
+  padding: $gap-lg 0;
+  position: relative;
+  background-color: $color-primary;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: $gap;
+    @extend %conteiner;
+  }
+
+  &-item {
+    &__input {
+    }
+  }
+}
